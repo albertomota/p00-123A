@@ -1,0 +1,12 @@
+core/CHANGELOG.txt
+core/COPYRIGHT.txt
+core/INSTALL.mysql.txt
+core/INSTALL.pgsql.txt
+core/INSTALL.sqlite.txt
+core/INSTALL.txt
+core/LICENSE.txt
+core/MAINTAINERS.txt
+core/README.txt
+core/UPGRADE.txt
+core/sites/default/files/*
+core/sites/default/settings.php
