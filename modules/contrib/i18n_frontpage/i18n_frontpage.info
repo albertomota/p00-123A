@@ -1,0 +1,11 @@
+name = Internationalization - Frontpage
+description = Filters nodes promoted to the frontpage (/node) for the current language.
+package = Multilingual - Internationalization
+dependencies[] = i18n
+core = 7.x
+; Information added by drupal.org packaging script on 2013-04-12
+version = "7.x-1.0"
+core = "7.x"
+project = "i18n_frontpage"
+datestamp = "1365794452"
+

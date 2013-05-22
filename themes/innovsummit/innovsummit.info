@@ -1,0 +1,15 @@
+name = Innovsummit
+description = Innovsummit Theme
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = _css/styles.css
+
+scripts[] = _js/jquery.countdown.js
+scripts[] = _js/jquery.zweatherfeed.min.js
+scripts[] = _js/global.js
+
+regions[navigation]     = Navigation
+regions[content_top]    = Content Top
+regions[content]        = Content
+regions[footer]         = Footer
