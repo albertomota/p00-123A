@@ -1,0 +1,1194 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+/*
+.Raleway
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 100;
+
+.Josefin-Sans 
+font-family: 'Josefin Sans' !important;
+font-style: normal;
+font-weight 400 600 700;
+*/
+
+/* html5doctor.com Reset v1.6.1 - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+/*
+1. Global classes
+
+
+*/
+body {
+    font-family: 'Josefin Sans', 'sans-serif';
+    font-size: 16px;
+    line-height: 1.75em;
+    color: #444444;
+    border-color: #FFFFFF;
+    font-weight: 700;
+    background: url(../_images/Banner.jpg) no-repeat 8px 8px transparent;
+    }
+h2 {
+    font-family: 'Josefin Sans', 'sans-serif';
+    font-size: 19px;
+    border-bottom: 1px solid #00627D;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 19px;
+    margin-bottom: .8em;
+    border-color: #00627D;
+}    
+ul {
+    list-style-type: square;
+    margin: 1em 0 1em;
+    padding: 0;
+    padding-left: 2em;
+}
+li {
+    margin-bottom: 1em;
+}
+p {
+    margin-bottom: 1em;
+    margin-top: 0em;
+}
+a {
+    color: #00627D;
+}
+a:hover {
+    color: #FD4603;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+.cr {
+	clear: right;
+}
+.cl {
+	clear: left;
+}
+.cb {
+	clear: both;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+/* 2. Main Header starts */
+.mainHeader {
+    margin: 46px auto 0;
+    width: 918px;
+}
+.mainHeader hgroup {
+    border: none;
+    border-top: 7px solid #00627D;
+    margin-bottom: 130px;
+}
+.mainHeader hgroup h1 {
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 5.5px;
+    line-height: 1.9em;
+    font-weight: 700;
+}
+.mainHeader hgroup h4 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 0.88em;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 3px;
+    margin-left: 2px;
+    margin-top: 0px;    
+    color: #FF5906;
+}
+.mainHeader nav{
+    font-family: 'Georgia', 'Times New Roman', 'serif';
+}
+.mainHeader nav ul{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.mainHeader nav ul li{
+    float: left;
+    padding: 0;
+    margin: 0 7px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-left: 2px solid #BCB9B9;
+    list-style: none;
+}
+.mainHeader nav ul li:hover {
+    background-image: url(../_images/edge.png);
+    background-color: #EFEFEF;
+}
+.mainHeader nav ul li a{
+    font-size: 12px;
+    color: #575656;
+    text-decoration: none;
+    padding: 0 10px 1px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    font-weight: 400;
+    }
+.mainHeader nav ul li a.active {
+    color: #90B32F;
+}
+.mainHeader nav ul li:hover a {    
+    color: #90B32F;    
+}
+/* 3. Content Section */
+.contentSection {
+    width: 918px;
+    margin: 0 auto;
+    position: relative;
+} 
+.contentSection h2.pageTitle {
+    border: medium none;
+    color: #266080;
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.2;
+}
+/* Font Page */
+
+    /*Video Block*/
+    .page-frontpage .contentSection .videoBlock {
+        float: left;
+        width:420px;
+        height: 190px;
+    }
+    .page-frontpage .contentSection .videoBlock iframe {
+        float: left;
+    }
+    .page-frontpage .contentSection .videoBlock .attachment img {
+        float: left;
+        margin: 0 0 10px 0;
+    }
+    .page-frontpage .contentSection .videoBlock .attachment {
+        float: left;
+        margin: 0 0 0 14px;
+    }
+    /*Map Block*/
+    .page-frontpage .mapBlock {
+        position: absolute;
+        right: 49px;
+        top: 51px;
+        z-index: 10;
+    }
+    .page-frontpage .mapPossition {
+        width: 450px;
+        height: 538px;
+        float: right;
+        display: block;
+    }
+    /*Keynote Presenters*/
+    .page-frontpage #block-views-keynote-presenters-block {
+        float: left;
+        width: 460px;
+        clear: left;
+        position: relative;
+    }
+    .page-frontpage #block-views-keynote-presenters-block h2 {
+        color: #266080;
+        border-bottom: 1px solid #e84c1a;
+        float: left;
+        clear: both;
+        
+    }
+    .page-frontpage .keynotePresenters .listofPresenters {
+        width: 446px;
+        float: left;
+        background-color: #518099;
+        position: relative;
+        padding: 20px 7px 0 7px;
+    }
+    .page-frontpage .keynotePresenters .listofPresenters h3 {
+        font-size: 18px;
+        color: #c0c1c3;
+        margin: 0 0 14px 15px;
+        
+    }
+    .page-frontpage .keynotePresenters .listofPresenters .presentator {
+        float: left;
+        width: 100%;
+        position: relative;
+        color: #fff;
+    }
+    .page-frontpage .keynotePresenters .listofPresenters .presentator .presentatorThumbnail {
+        float: left;
+        width: 76px;
+        height: 72px;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 4px 9px 0 0;
+    }
+    .page-frontpage .keynotePresenters .listofPresenters .presentator .presentatorThumbnail img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .page-frontpage .keynotePresenters .listofPresenters .presentator  h4 {
+        color: #f8754b;
+        
+    }
+    .page-frontpage .keynotePresenters .listofPresenters .presentator p {
+        z-index: 15;
+        padding: 0 0 0 81px;
+    }
+    /*Coutdown Container*/
+    .page-frontpage .coutdownContainer {
+        float: right;
+        width: 450px;
+        position: relative;
+    }
+    .page-frontpage .coutdownContainer img {
+        display: block;
+    }
+    .page-frontpage .coutdownContainer .cityPicture{
+        float: left;    
+    }
+    .page-frontpage .coutdownContainer .hotel {
+        float: left;
+        font-size: 12px;
+        text-align: center;
+        margin: 19px 0 0;        
+    }
+    .page-frontpage .coutdownContainer .hotel a {
+        color: #518099;
+    }
+    .page-frontpage .coutdownContainer .countDown {
+        float: right;
+        width: 175px;
+        height:189px;
+        position: relative;
+        background: url(../_images/countdown.png) no-repeat center center transparent;
+    }
+    .page-frontpage .coutdownContainer .countDown .date{
+        width: 100%;
+        text-align: center;
+        display: block;
+        color: #fff;        
+        text-transform: uppercase;
+        font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
+        font-weight:400; 
+        font-stretch:normal;
+        text-shadow: 0px 2px 2px #000000;
+        filter: dropshadow(color=#000000, offx=0, offy=2);
+    }
+    .page-frontpage .coutdownContainer .countDown .day.first {
+        margin: 0 0 0 9px;
+    }
+    .page-frontpage .coutdownContainer .countDown .day {
+        background: url('../_images/days-background.png') no-repeat center center transparent;
+        width: 77px;
+        height: 135px;
+        display: block;
+        text-align: center;
+        font-size: 75.71px;
+        color: #fff;
+        line-height: 131px;
+        position: relative;
+        float: left;
+        font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;
+    }
+    .page-frontpage .coutdownContainer .countDown .day em {
+        background: url("../_images/separation-line.png") no-repeat scroll 0 0 transparent;
+        display: block;
+        height: 3px;
+        left: 7px;
+        position: absolute;
+        top: 63px;
+        width: 63px;
+    }
+    .page-frontpage .coutdownContainer .countDown .deaysUntil {
+        font-size: 12px;
+        position: absolute;
+        left: 0;
+        bottom: 7px;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+    }
+    .page-frontpage .coutdownContainer .weather {
+        float: right;
+        width: 152px;
+        background-color: #518099;
+        color: #fff;
+        padding: 10px;
+        margin: 0 0 9px;
+        text-shadow: 0px 2px 2px #000000;
+        filter: dropshadow(color=#000000, offx=0, offy=2);
+        
+    }
+    .page-frontpage .coutdownContainer .weather .weatherItem {
+        background-size:cover cover;
+    }
+    .page-frontpage .coutdownContainer .weather a {
+        color: #fff;
+    }
+    /*Summit Description*/
+    .page-frontpage .summitDescription {
+        float: right;
+        width: 430px;
+        background-color: #f8754b;
+        color: #fff;    
+        padding: 16px 10px;
+            
+    }
+    .page-frontpage .summitDescription h2 {
+        margin: 0 0 20px;
+        border: none;
+    }
+/*4. Main Footer */ 
+.mainFooter {
+    width: 918px;
+    margin: 25px auto 0;
+    position: relative;
+    border-top: 1px solid #e84c1a;
+    padding: 7px 0 0;
+    font-family: 'Raleway';
+    font-weight: 100;
+} 
+.mainFooter a {
+    text-decoration: none;
+}  
+.mainFooter .ilsiLogo {
+    float: left;
+}
+.mainFooter .middle {
+    float: left;
+    text-align: center;
+    width: 585px;
+}
+.mainFooter .sponsors {
+    float: right;
+    position: relative;
+}
+.mainFooter .sponsors h2 {
+    border: medium none;
+    font-size: 14.1px;
+    left: -64px;
+    margin: 0;
+    position: absolute;
+    text-transform: none;
+    top: -4px;
+}
+/* Program Page */
+.page-node-26 .contentSection article header,
+.page-node-34 .contentSection article header{
+    background-color: #85a6b7;
+    padding: 9px 22px;
+    
+    
+}
+.page-node-26 .contentSection article header h2,
+.page-node-34 .contentSection article header h2 {
+    color:#fff;
+    border: none;
+    text-align: center;
+    margin: 0;
+}
+.page-node-26 .contentSection article .pageContent,
+.page-node-34 .contentSection article .pageContent {
+    background-color: #85a6b7;
+    margin: 35px 0 0;
+    padding: 9px 22px;
+    color: #fff;    
+}
+.page-node-26 .contentSection article footer,
+.page-node-34 .contentSection article footer {
+    margin: 17px 0 0;
+}
+/* About Page*/
+.page-node-27 {}
+.page-node-27 .contentSection article .pageContent,
+.page-node-30 .contentSection article .pageContent {
+    background-color: #85a6b7;
+    margin: 35px 0 0;
+    padding: 9px 22px;
+    color: #fff;    
+}
+.page-node-27 .contentSection .organizersSpeakers,
+.page-node-30 .contentSection .organizersSpeakers {}
+.page-node-27 .contentSection .organizersSpeakers article,
+.page-node-30 .contentSection .organizersSpeakers article{
+    float: left;
+    width: 435px;   
+}
+.page-node-27 .contentSection .organizersSpeakers article.secondOrginizer,
+.page-node-30 .contentSection .organizersSpeakers article.secondOrginizer {
+    float: right;
+}
+.page-node-27 .contentSection .organizersSpeakers article:first-child,
+.page-node-30 .contentSection .organizersSpeakers article:first-child {
+    float: left;
+}
+.page-node-27 .contentSection .organizersSpeakers article header,
+.page-node-30 .contentSection .organizersSpeakers article header  {
+    background-color:#518099 ;
+    position: relative;
+    padding:0 0 0 85px;
+    height: 71px;
+    width: 300px;
+}
+.page-node-27 .contentSection .organizersSpeakers article header h2,
+.page-node-30 .contentSection .organizersSpeakers article header h2  {
+    margin: 0;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2;
+    
+}
+.page-node-27 .contentSection .organizersSpeakers article header h3,
+.page-node-30 .contentSection .organizersSpeakers article header h3 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.page-node-27 .contentSection .organizersSpeakers article header .presentatorThumbnail,
+.page-node-30 .contentSection .organizersSpeakers article header .presentatorThumbnail {
+    position: absolute;
+    left: 0;
+    top: 0;    
+    width: 84px;
+    height: 71px;
+    overflow: hidden;
+}
+.page-node-27 .contentSection .organizersSpeakers article header .presentatorThumbnail .pentagonImage,
+.page-node-30 .contentSection .organizersSpeakers article header .presentatorThumbnail .pentagonImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.page-node-27 .contentSection .organizersSpeakers article header .presentatorThumbnail .profilePicture,
+.page-node-30 .contentSection .organizersSpeakers article header .presentatorThumbnail .profilePicture  {
+    position: absolute;
+    left: 4px;
+    top: 0;    
+}
+
+.page-node-27 .contentSection .organizersSpeakers article .articleContent,
+.page-node-30 .contentSection .organizersSpeakers article .articleContent {
+    background-color: #b7b8b8;
+    padding: 20px 13px;
+    color: #fff;
+    min-height: 552px;
+}
+.page-node-27 .contentSection .organizersSpeakers article .articleContent h4,
+.page-node-30 .contentSection .organizersSpeakers article .articleContent h4 {
+    font-size: 18px;
+}
+.page-node-27 .contentSection .organizersSpeakers article .articleContent h5,
+.page-node-30 .contentSection .organizersSpeakers article .articleContent h5  {
+    margin: 0 0 23px;
+}
+.page-node-27 .contentSection .organizersSpeakers article .articleContent ul,
+.page-node-30 .contentSection .organizersSpeakers article .articleContent ul {
+    margin: 0;
+}
+.page-node-27 .contentSection .organizersSpeakers article .articleContent ul li,
+.page-node-30 .contentSection .organizersSpeakers article .articleContent ul li {
+    margin: 0;
+}
+/*Attendees Page*/
+.page-attendees .contentSection {}
+.page-attendees .contentSection .filter {
+    font-size: 14px;
+    color: #266080;
+    padding: 0 0 0 41px;
+    margin: 0 0 30px;
+    font-weight: 400;
+}
+.page-attendees .contentSection .filter a {
+    color: #266080;
+    text-decoration: none;
+    
+}
+.page-attendees .contentSection .filter a.active {
+    font-weight: 700;
+}
+.page-attendees .contentSection .attendee {
+    background-color: #518099;
+    position: relative;
+    width: 229px;
+    height: 180px;
+    padding: 10px 20px 0 28px;
+    float: left;
+    margin: 0 0 22px 41px;
+}
+.page-attendees .contentSection .attendee .presentatorThumbnail {
+    position: absolute;
+    left: -50px;
+    top: -4px;
+    width: 90px;
+    height: 79px;
+    background-position: 12px 4px;
+    overflow: hidden;
+}
+.page-attendees .contentSection .attendee .presentatorThumbnail img.pentagon-attendee-even,
+.page-attendees .contentSection .attendee .presentatorThumbnail img.pentagon-attendee-odd {
+    display: none;
+}
+
+.page-attendees .contentSection .attendee.views-row-even .presentatorThumbnail img.pentagon-attendee-even {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.page-attendees .contentSection .attendee.views-row-odd .presentatorThumbnail img.pentagon-attendee-odd {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.page-attendees .contentSection .attendee.views-row-even {
+    background-color: #95b1c1;
+    float: right;
+}
+.page-attendees .contentSection .attendee .presentatorThumbnail .profilePicture {
+    left: 16px;
+    position: absolute;
+    top: 3px;
+}
+.page-attendees .contentSection .attendee header {
+    padding:  0 0 0 23px;
+}
+.page-attendees .contentSection .attendee header h2{
+    margin: 0;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1;
+    
+}
+.page-attendees .contentSection .attendee header h3{
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+}
+.page-attendees .contentSection .attendee .files {
+    margin: 8px 0 0;
+}
+.page-attendees .contentSection .attendee .files .file {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 0 0 0 32px;
+   
+}
+.page-attendees .contentSection .attendee .files .file a {
+    color: #fff;
+    text-decoration: none;
+}
+.page-attendees .contentSection .attendee .files span:first-child {
+    margin: 0;
+}
+.page-attendees .contentSection .attendee .files .file img {
+    display: block;
+    height: auto;
+    width: 50px;
+    margin: 0 auto;
+}
+
+/*Archives Page*/
+.page-archives .filter {
+    font-size: 14px;
+    color: #266080;
+    padding: 0 0 0 41px;
+    margin: 0 0 30px;
+    font-weight: 400;
+}
+.page-archives .filter a {
+    color: #266080;
+    text-decoration: none;
+}
+.page-archives .filter a.active {
+    font-weight: 700;
+}
+.page-archives .archivesItem {
+    background-color: #85a6b7;
+    width: 237px;
+    height: 90px;
+    float: left;
+    padding: 8px 5px;
+    color: #fff;
+    position: relative;
+    margin: 10px ;
+}
+.page-archives .archivesItem.views-row-odd {
+    background-color: #518099;
+}
+
+.page-archives .archivesItem .author,
+.page-archives .archivesItem .association,
+.page-archives .archivesItem .uploadedDate{
+    display: block;
+    line-height: 1.2;
+}
+.page-archives .archivesItem .fileName {
+    line-height: 1.2;
+}
+.page-archives .archivesItem a {
+    color: #fff;
+    text-decoration: none;
+}
+.page-archives .archivesItem .file-icon {
+    width: 52px;
+    height: 52px;
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 28px;
+}
+/*Contact Page*/
+.page-node-3 .organizersSpeakers,
+.page-node-4 .organizersSpeakers {}
+.page-node-3 .organizersSpeakers .organizer,
+.page-node-4 .organizersSpeakers .organizer{
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    float: left;
+    clear: left;
+    position: relative;
+    background-color: #518099;
+    width: 277px;
+    height: 70px;
+    padding: 8px 0 0 48px;
+    margin: 0 0 7px 116px;
+}
+.page-node-3 .organizersSpeakers .organizer .presentatorThumbnail,
+.page-node-4 .organizersSpeakers .organizer .presentatorThumbnail {
+    position: absolute;
+    left: -42px;
+    top: 0px;
+    width: 84px;
+    height: 71px;    
+    overflow: hidden;
+}
+.page-node-3 .organizersSpeakers .organizer h2,
+.page-node-4 .organizersSpeakers .organizer h2{
+    margin: 0;
+    border: none;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+}
+.page-node-3 .organizersSpeakers .organizer .title,
+.page-node-4 .organizersSpeakers .organizer .title {
+    margin: 0 0 0 36px;
+}
+.page-node-3 .organizersSpeakers .organizer a,
+.page-node-4 .organizersSpeakers .organizer a {
+    color:#fff;
+    text-decoration: none;
+}
+.page-node-3 .organizersSpeakers .logo,
+.page-node-4 .organizersSpeakers .logo  {
+    margin: 0 0 0 36px;
+}
+.page-node-3 .organizersSpeakers .locationInfo,
+.page-node-4 .organizersSpeakers .locationInfo {
+    
+    width: 100%;
+    float: left;
+    display: block;
+}
+.page-node-3 .organizersSpeakers .locationInfo .mapLocation,
+.page-node-4 .organizersSpeakers .locationInfo .mapLocation  {
+    float: left;
+    margin: 0 0 0 50px;
+}
+.page-node-3 .organizersSpeakers .locationInfo img,
+.page-node-4 .organizersSpeakers .locationInfo img {
+    display: block;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.page-node-3 .organizersSpeakers .locationInfo .resourceSource,
+.page-node-4 .organizersSpeakers .locationInfo .resourceSource {
+    float: left;
+    width: 100%;
+    display: block;
+}
+
+.page-node-3 .pageContent,
+.page-node-4 .pageContent {
+    color: #fff;
+    background-color: #85a6b7;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 0 17px;
+}
+.page-node-3 .pageContent h2,
+.page-node-4 .pageContent h2  {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.2;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    
+}
+.page-node-3 .pageContent a,
+.page-node-4 .pageContent a {
+    color: #fff;
+}
+.page-node-3 .node-page footer h2,
+.page-node-4 .node-page footer h2  {
+    border: none;
+    font-weight: 700;
+    margin: 0;
+
+}
+.page-node-3 .node-page footer,
+.page-node-4 .node-page footer {
+    color: #fff;
+    background-color: #e9935f;
+    padding: 10px;
+    font-size: 16px;
+}
+.page-node-3 .node-page footer p,
+.page-node-4 .node-page footer p {
+    margin: 0 0 0 237px;
+}
+.page-node-3 .node-page .left,
+.page-node-4 .node-page .left  {
+    clear: left;
+    float: left;
+    margin: 0 21px;
+}
+.page-node-3 .node-page .left:first-child,
+.page-node-4 .node-page .left:first-child {
+    margin: 0 21px 20px;
+}
+/*page user*/
+.page-users {}
+.page-users article.profile {
+    background: url(../_images/profilebg.jpg) no-repeat center top transparent;
+}
+.page-users article.profile header {
+    width: 812px;
+    margin: 0 auto;
+}
+.page-users article.profile header .left{
+    float: left;
+    width: 218px;
+    margin: 28px 0 0 0;
+    
+}
+.page-users article.profile header .left .profilePicture {
+    width: 218px;
+    height: 140px;
+    /*border-radius: 4px 4px 4px 4px;*/
+    display: block;
+    background: url('../_images/profilePhotobg.png');
+    position: relative;
+}
+.page-users article.profile header .left .profilePicture img {
+    display:block;
+    margin: 16px 0 0 54px;
+    float: left;
+}
+.page-users article.profile header .left .personalData {
+    color: #266080;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0 0 0 50px;
+}
+.page-users article.profile header .right {
+    float: right;
+    width: 448px;
+}
+.page-users article.profile header .right .fileHeader {
+    color: #266080;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+.page-users article.profile header .right .files {
+    background: url(../_images/transparent.png);
+    width: 448px;
+    height: 127px;
+    float: left;
+    text-align: center;
+    padding: 6px 0 0;
+}
+.page-users article.profile header .right .files .file {
+    display: inline-block;
+    margin: 0 0 0 27px;
+
+}
+.page-users article.profile header .right .files .file img {
+    width: 52px;
+    height: auto;
+    margin: 0 0 13px;
+}
+.page-users article.profile header .right .files .file:first-child{
+    margin: 0;
+}
+.page-users article.profile header .right .files a {
+    color: #f6f6f6;
+    font-size: 16px;
+    display: block;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.page-users article.profile .pfileDescription {
+  background: url("../_images/biodescriptiom_bg_top.png") no-repeat scroll left top transparent;
+  margin: 26px auto 48px;
+  padding: 40px 0 0 23px;
+  width: 789px;
+  position: relative;
+  color: #f6f6f6;
+}
+.page-users article.profile .pfileDescription .bottomBg {
+    display: block;
+    position: absolute;
+    bottom: -48px;
+    left: 0;
+    background: url("../_images/biodescriptiom_bg_bottom.png") no-repeat scroll center center transparent;
+    width: 812px;
+    height: 48px;
+    z-index: 1;
+}
+/*  Registration Page   */
+.page-user-register {}
+.page-user-register .group-questionnaire {}
+.page-user-register .group-questionnaire {}
+.page-user-register .group-questionnaire .multipage-panes {}
+/*Global registration styles*/
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane {
+    color: #266080;
+}
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane .fieldset-description,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane .fieldset-description {
+    border: none;
+    font-size: 16px;
+    margin: 0 0 0 51px;
+    font-weight: 700;
+    font-family: 'Century Gothic', Arial;
+    padding: 50px 0 0 0;
+    background: url(../_images/step1.png) no-repeat right 6px transparent;
+}
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane h2,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane h2 {
+    border: none;
+    font-size: 16px;
+    margin: 0 0 0 51px;
+    font-weight: 700;
+    font-family: 'Century Gothic', Arial;
+    /*padding: 50px 0 0 0;*/
+    text-align: center;
+    margin: 0;
+}
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane label,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane label {
+    font-size: 16px;
+    font-family: 'arial';
+}
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane .form-text,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane .form-text {
+    width: 914px;
+    height: 48px;
+    padding: 2px;
+    background-color: #c5c4c2;
+    border: none;
+}
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane .form-text.error,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane .form-text.error {
+    border: 1px solid red;
+}
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane .multipage-controls-list,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane .multipage-controls-list {
+    width: 135px;
+    margin: 0 auto;
+    float: none !important;
+    position: relative;
+}
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane .multipage-button,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane .multipage-button{
+    width: 135px;
+    height: 41px;
+    display: block;
+    margin: 0 auto;
+    float: none !important;
+}
+
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane .multipage-link-next,
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane .multipage-link-previous,
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane #edit-submit,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane .multipage-link-next,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane .multipage-link-previous,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane #edit-submit {
+    display: block;
+    background: url(../_images/backnext.png) no-repeat right center transparent !important;
+    width: 32px;
+    height: 41px;
+    text-indent: -9999em;
+    cursor: pointer;
+    border: none !important;
+    float: right;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane .multipage-link-previous,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane .multipage-link-previous {
+    background-position: left center !important;
+    float: left;
+}
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane #edit-submit,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane #edit-submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../_images/finish.png) no-repeat 0 0 transparent !important;
+    min-width:32px !important;
+}
+.page-user-register .group-questionnaire .multipage-panes .multipage-pane .multipage-link-previous,
+.page-user-edit .group-questionnaire .multipage-panes .multipage-pane .multipage-link-previous{}
+/*STEP #1-*/
+.page-user-register .group-questionnaire .multipage-panes .group-questionnaire2{}
+.page-user-register .group-questionnaire .multipage-panes .group-questionnaire2 h2 {
+    text-align: center;
+    margin: 0;
+    
+} 
+.page-user-register .group-questionnaire .multipage-panes .group-questionnaire2 .fieldset-description {
+    border: none;
+    font-size: 16px;
+    margin: 0 0 0 51px;
+    font-weight: 700;
+    font-family: 'Century Gothic', Arial;
+    padding: 50px 0 0 0;
+    background: url(../_images/step1.png) no-repeat right 6px transparent;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-questionnaire2 .multipage-link-previous {
+    display: none;
+}
+/*STEP #2-*/
+.page-user-register .group-questionnaire .multipage-panes .group-step-2,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-2 {}
+.page-user-register .group-questionnaire .multipage-panes .group-step-2 .fieldset-description,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-2 .fieldset-description{
+    background: url(../_images/step2.png) no-repeat right 6px transparent;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und{
+    position: relative;
+    margin: 0 0 222px;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und legend,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und legend{
+    display: none;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und .fieldset-description,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und .fieldset-description{
+    background-color: #adaba8;
+    padding: 8px 10px;
+    color: #266080;
+    font-family: 'Arial';
+    margin: 33px 0 43px;
+    background-image: none;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und .form-type-managed-file,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und .form-type-managed-file {
+    position: absolute;
+    top: 148px;
+    left: 0;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und .form-type-managed-file .form-managed-file input[type=file],
+.page-user-edit .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und .form-type-managed-file .form-managed-file input[type=file]{
+    float: left;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und .form-type-managed-file .form-managed-file input[type=submit],
+.page-user-edit .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und .form-type-managed-file .form-managed-file input[type=submit]{
+    background: url(../_images/uploadfile.png) no-repeat 0 0 transparent;
+    width: 151px;
+    height: 56px;
+    display: block;
+    text-indent: -9999em;
+    float: left;
+    clear: both;
+    border: none;
+    margin: 25px 0 0;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und #edit-field-attachment-und-table,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-2 #edit-field-attachment-und #edit-field-attachment-und-table {
+    position: relative;
+    margin: 155px 0 0 0;
+}
+/*STEP #3-*/
+.page-user-register .group-questionnaire .multipage-panes .group-step-3,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3{
+    position: relative;
+    clear: both;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-3 .fieldset-description,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3 .fieldset-description {
+    background: url(../_images/step3.png) no-repeat right 6px transparent;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-3 #edit-account,
+.page-user-register .group-questionnaire .multipage-panes .group-step-3 .field-type-text,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3 #edit-account,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3 .field-type-text {
+    width: 376px;
+    float: left;
+    clear: left;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-3 .field-name-field-bio,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3 .field-name-field-bio{
+    width: 100%;
+    float: left;
+    clear: both;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-3 .field-name-field-alternative-profile-image,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3 .field-name-field-alternative-profile-image {
+    right: 82px;
+    top: 91px;
+    position: absolute;
+    width: 225px;
+   
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-3 .field-name-field-alternative-profile-image label,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3 .field-name-field-alternative-profile-image label {
+    font-size: 14px;
+    font-weight: bold;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-3 .field-name-field-alternative-profile-image #edit-field-alternative-profile-image-und-0-upload-button,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3 .field-name-field-alternative-profile-image #edit-field-alternative-profile-image-und-0-upload-button{
+    background: url(../_images/uploadpicture.png) no-repeat 0 0 transparent;
+    width: 151px;
+    height: 56px;
+    display: block;
+    text-indent: -9999em;
+    float: left;
+    clear: both;
+    border: none;
+    margin: 25px 0 0;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-3 .field-name-field-alternative-profile-image .image-preview,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3 .field-name-field-alternative-profile-image .image-preview {
+    padding: 0 !important;
+    float: none;
+    position: absolute;
+    bottom: -130px;
+    right: 42px;
+    width: 142px;
+    height: 118px;
+    background: url(../_images/image-preview.png) no-repeat center center;
+    text-align: center;
+
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-3 .field-name-field-alternative-profile-image .image-preview img,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3 .field-name-field-alternative-profile-image .image-preview img{
+    width: 100%;
+    height: auto;
+    margin:20px 0 0;
+}
+.page-user-register .group-questionnaire .multipage-panes .group-step-3 .form-text,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-3 .form-text {
+    width: 372px;    
+}
+/*STEP #4-*/
+.page-user-register .group-questionnaire .multipage-panes .group-step-4,
+.page-user-edit.group-questionnaire .multipage-panes .group-step-4 {}
+.page-user-register .group-questionnaire .multipage-panes .group-step-4 .fieldset-description,
+.page-user-edit .group-questionnaire .multipage-panes .group-step-4 .fieldset-description{
+    background: url(../_images/step4.png) no-repeat right 6px transparent;
+}
+/*Confirmation */
+.page-node-11 .node-page header,
+.page-node-12 .node-page header{
+    border: none;
+    font-size: 16px;
+    margin: 0 0 0 51px;
+    font-weight: 700;
+    font-family: 'Century Gothic', Arial;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 50px;
+    background: url(../_images/step5.png) no-repeat right 32px transparent;
+}
+.page-node-11 .node-page .pageContent,
+.page-node-12 .node-page .pageContent {
+    background-color: #adaba8;
+    padding: 8px 10px;
+    color: #266080;
+    font-family: 'Arial';
+    margin: 33px 0 43px;
+    background-image: none;
+    text-align: center;
+    width: 675px;
+    margin: 0 auto;
+}
+.page-node-11 .contentSection  #page-title,
+.page-node-12 .contentSection  #page-title {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 110px;
+    left: 124px;
+    color: #266080;
+    border: none;
+    font-family: 'Century Gothic', Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+/*Languages Switcher*/
+.language-switcher-locale-url {
+    background: url(../_images/base.png) no-repeat center center;
+}
+.language-switcher-locale-url li {
+    border-left:none !important;
+    border-radius: 0;
+
+}
+.language-switcher-locale-url li.active{
+    display: none;
+}
+/**/
+.pentagon {
+    width: 72px;
+    height: 76px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
